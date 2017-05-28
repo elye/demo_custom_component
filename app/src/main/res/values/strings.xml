@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="component_one">Custom Component 1</string>
+    <string name="component_two">Custom Component 2</string>
+    <string name="component_three">Custom Component 3</string>
+    <string name="hint_text">Type something for</string>
+</resources>
