@@ -9,12 +9,12 @@ import kotlinx.android.synthetic.main.view_custom_component.view.*
 class CustomComponent @JvmOverloads constructor(
         context: Context,
         attrs: AttributeSet? = null,
-        defStyle: Int = 0,
-        defStyleRes: Int = 0
-) : LinearLayout(context, attrs, defStyle, defStyleRes) {
+        defStyle: Int = 0
+) : LinearLayout(context, attrs, defStyle) {
 
     init {
-        LayoutInflater.from(context).inflate(R.layout.view_custom_component, this, true)
+        val inflater : LayoutInflater = LayoutInflater.from(context)
+        inflater.inflate(R.layout.view_custom_component, this, true)
         orientation = VERTICAL
 
         attrs?.let {
